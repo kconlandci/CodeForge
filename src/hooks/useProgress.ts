@@ -212,7 +212,7 @@ export function useProgress(userId?: string | null) {
         }
       });
     }
-  }, []);
+  }, [userId]);
 
   useEffect(() => {
     const listener = CapApp.addListener("pause", () => {
