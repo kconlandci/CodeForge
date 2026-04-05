@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* ThreatForge — Blacksmith Theme Tokens */
+:root {
+  --forge-dark: #100914;
+  --forge-surface: #1a1022;
+  --forge-card: #1f2937;
+  --forge-ember: #f43f5e;
+  --forge-ember-glow: #fb7185;
+  --forge-steel: #94a3b8;
+  --forge-text: #e2e8f0;
+  --forge-muted: #64748b;
+  --forge-success: #22c55e;
+  --forge-warning: #eab308;
+  --forge-danger: #ef4444;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Inter, system-ui, -apple-system, sans-serif;
+  background: var(--forge-dark);
+  color: var(--forge-text);
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button, a, [role="button"] {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#root {
+  min-height: 100svh;
+  max-width: 480px;
+  margin: 0 auto;
+}
