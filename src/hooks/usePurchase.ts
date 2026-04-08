@@ -78,6 +78,8 @@ export function usePurchase(): UsePurchase {
         return { success: true };
       }
 
+      // No active entitlement — clear local premium cache (handles refunds)
+      await setPremiumStatus(false, uid);
       return { success: false, error: "unknown" };
     } catch (error) {
       console.error("[CodeForge] Restore failed:", error);
