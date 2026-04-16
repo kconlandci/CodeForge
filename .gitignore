@@ -27,3 +27,12 @@ dist-ssr
 # Signing keys
 *.jks
 *.keystore
+
+# Android build artifacts
+android/local.properties
+android/.gradle/
+android/build/
+android/app/build/
+android/app/release/
+android/captures/
+*.iml
